@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:androd = "http://schemas.android.com/apk/res/android">
+    <gradient
+        androd:angle="45"
+        androd:endColor="#F53d3d"
+        androd:startColor="#BF271F" />
+</shape>
