@@ -23,6 +23,5 @@
         />
     <stroke
         android:width="3dp"
-        android:color="#800000"
-        />
+        android:color="@color/bordo"/>
 </shape>
