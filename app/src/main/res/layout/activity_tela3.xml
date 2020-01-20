@@ -9,7 +9,6 @@
     android:fitsSystemWindows="true"
     tools:openDrawer="start">
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -22,31 +21,60 @@
             android:layout_height="wrap_content"
             android:background="#bf271f"
             android:minHeight="60dp"
+            android:drawableRight ="@drawable/notifising"
             app:titleTextColor="@android:color/white"
             tools:layout_editor_absoluteX="45dp"
             tools:layout_editor_absoluteY="1dp">
-
-
 
             <TextView
                 android:id="@+id/textView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="A Diligência"
-                android:textColor="#ffffff"
+                android:text="@string/a_dilig_ncia"
+                android:textColor="@color/branco"
                 android:textSize="25sp"
                 android:textStyle="bold" />
 
+            <Button
+                android:id="@+id/angry_btn"
+                android:text="1"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                android:layout_gravity="right"
+                android:layout_width="40dp"
+                android:layout_marginRight="21dp"
+                android:layout_height="40dp"
+                android:background="@drawable/buttonshape"
+                android:shadowColor="#800000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                />
 
-
+            <ImageButton
+                android:id="@+id/imageButton4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:background="#bf271f"
+                app:srcCompat="@drawable/notifising"
+                android:paddingRight="10sp"/>
         </androidx.appcompat.widget.Toolbar>
+
+
+
+
+
+
 
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/nav_host_fragment" />
     </LinearLayout>
+
+
 
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/navigation"
