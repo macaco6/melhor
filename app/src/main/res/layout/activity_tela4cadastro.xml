@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient"
+    android:background="@drawable/gradiente_background"
     tools:context=".tela4cadastro">
 
     <ImageView
@@ -59,6 +59,8 @@
         android:hint="E-mail:"
         android:inputType="textEmailAddress"
         android:textColor="@color/branco"
+        android:textColorHint="@color/black"
+        android:textStyle="normal|bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nome" />
@@ -73,6 +75,8 @@
         android:hint="Nome:"
         android:inputType="textEmailAddress"
         android:textColor="@color/branco"
+        android:textColorHint="#000000"
+        android:textStyle="normal|bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
@@ -87,6 +91,8 @@
         android:hint="Senha:"
         android:inputType="textPassword"
         android:textColor="@color/branco"
+        android:textColorHint="@color/black"
+        android:textStyle="normal|bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/email" />
@@ -101,10 +107,11 @@
         android:hint="Confirmar Senha:"
         android:inputType="textPassword"
         android:textColor="@color/branco"
+        android:textColorHint="@color/black"
+        android:textStyle="normal|bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/senha" />
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

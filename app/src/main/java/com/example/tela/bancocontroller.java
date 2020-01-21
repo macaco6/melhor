@@ -2,7 +2,12 @@ package com.example.tela;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+
+import static com.example.tela.criaBanco.EMAIL;
+import static com.example.tela.criaBanco.SENHA;
+import static com.example.tela.criaBanco.TABELA;
 
 public class bancocontroller {
 
@@ -20,10 +25,10 @@ public class bancocontroller {
         db = banco.getWritableDatabase();
         valores = new ContentValues();
         valores.put(criaBanco.NOME, titulo);
-        valores.put(criaBanco.EMAIL, autor);
-        valores.put(criaBanco.SENHA, editora);
+        valores.put(EMAIL, autor);
+        valores.put(SENHA, editora);
 
-        resultado = db.insert(criaBanco.TABELA, null, valores);
+        resultado = db.insert(TABELA, null, valores);
         db.close();
 
         if (resultado == -1)
@@ -31,5 +36,19 @@ public class bancocontroller {
         else
             return "Registration successfully inserted";
 
+
+    }
+
+    public Cursor fazerLogin(String email,String senha) {
+        db = banco.getWritableDatabase();
+        String sql = "SELECT * FROM " + TABELA + " WHERE " + EMAIL + " = ? AND " + SENHA + " = ?";
+        String[] selectionArgs = new String[]{email,senha};
+        Cursor cursor = db.rawQuery(sql, selectionArgs);
+        if (cursor != null) {
+            cursor.moveToFirst();
+            return cursor;
+        } else {
+            return null;
+        }
     }
 }

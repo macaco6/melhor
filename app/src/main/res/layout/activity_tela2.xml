@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient"
+    android:background="@drawable/gradiente_background"
     tools:context=".tela2">
 
     <Button
@@ -19,7 +19,10 @@
         android:layout_marginEnd="27dp"
         android:layout_marginRight="27dp"
         android:background="@drawable/buttonshape"
-        android:onClick="tela3map"
+        android:drawableLeft="@drawable/enter"
+        android:onClick="login"
+        android:paddingLeft="45dp"
+        android:paddingRight="45dp"
         android:shadowColor="#A8A8A8"
         android:shadowDx="0"
         android:shadowDy="0"
@@ -29,10 +32,10 @@
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText3" />
+        app:layout_constraintTop_toBottomOf="@+id/senha" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/senha"
         android:layout_width="328dp"
         android:layout_height="43dp"
         android:layout_marginStart="27dp"
@@ -49,7 +52,7 @@
         android:textColorHint="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+        app:layout_constraintTop_toBottomOf="@+id/email" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -66,7 +69,7 @@
         app:srcCompat="@drawable/logo" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/email"
         android:layout_width="330dp"
         android:layout_height="46dp"
         android:layout_marginStart="27dp"
@@ -128,26 +131,24 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="126dp"
-        android:layout_height="22dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
+        android:layout_width="150dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
         android:layout_marginBottom="16dp"
-        android:text="Não e cadastrado?"
-        android:paddingRight="15dp"
         android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="Não e cadastrado?"
         android:textColor="@color/branco"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="96dp"
+        android:layout_width="130dp"
         android:layout_height="21dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginRight="70dp"
         android:layout_marginBottom="16dp"
         android:background="@android:color/transparent"
         android:onClick="tela4cadastro"
@@ -155,8 +156,7 @@
         android:textColor="@color/branco"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/button3"
@@ -173,7 +173,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.85"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText3" />
+        app:layout_constraintTop_toBottomOf="@+id/senha" />
     android
 
 

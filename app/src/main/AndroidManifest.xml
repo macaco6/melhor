@@ -12,7 +12,7 @@
         <activity
             android:name=".menu"
             android:label="@string/title_activity_menu"
-            android:theme="@style/NoActionBar"></activity>
+            android:theme="@style/NoActionBar" />
         <activity android:name=".tela4cadastro" />
         <activity android:name=".tela3" />
         <activity android:name=".splash">
