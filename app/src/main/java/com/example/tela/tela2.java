@@ -16,9 +16,9 @@ public class tela2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tela2);
     }
-    public void tela3map (View view){
+    public void map (View view){
 
-        Intent intent = new Intent(this, tela3.class);
+        Intent intent = new Intent(this, MapsActivity.class);
         startActivity(intent);
     }
     public void tela4cadastro (View view){
