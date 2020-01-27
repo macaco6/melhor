@@ -68,14 +68,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/nav_host_fragment"/>
-
-
-
-
     </LinearLayout>
-
-
-
 
     <com.google.android.material.navigation.NavigationView
 
@@ -85,11 +78,6 @@
         android:layout_gravity="start|left"
         app:headerLayout="@layout/nav_header_menu"
         app:menu="@menu/activity_menu_drawer" />
-
-
-
-
-
 
 </androidx.drawerlayout.widget.DrawerLayout>
 

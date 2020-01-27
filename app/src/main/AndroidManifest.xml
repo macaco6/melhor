@@ -13,6 +13,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".busca"></activity>
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
@@ -21,10 +22,7 @@
         <activity
             android:name=".MapsActivity"
             android:label="@string/title_activity_maps"
-            android:theme="@style/NoActionBar"
-            ></activity>
-            android:name=".MapsActivity" />
-
+            android:theme="@style/NoActionBar" />
         <activity
             android:name=".menu"
             android:label="@string/title_activity_menu"
