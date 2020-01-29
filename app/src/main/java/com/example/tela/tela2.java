@@ -11,6 +11,12 @@ import android.widget.Toast;
 
 public class tela2 extends AppCompatActivity {
 
+    public void busca(View view){
+
+        Intent intent = new Intent(this, busca.class);
+        startActivity(intent);
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

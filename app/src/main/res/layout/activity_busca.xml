@@ -12,7 +12,7 @@
         android:digits="0123456789"
         android:layout_height="wrap_content"
         android:hint="CEP"
-        android:id="@+id/etMain_cep"
+        android:id="@+id/bccep"
         android:textColor="#595959"
         android:textSize="25sp"
         android:inputType="number"
@@ -25,7 +25,7 @@
         android:layout_width="match_parent">
 
         <Button
-            android:id="@+id/btnMain_buscarCep"
+            android:id="@+id/btcep"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
@@ -39,7 +39,7 @@
 
     <TextView
         android:layout_height="match_parent"
-        android:id="@+id/etMain_resposta"
+        android:id="@+id/rescep"
         android:textColor="#595959"
         android:textSize="20sp"
         android:layout_width="match_parent"/>
