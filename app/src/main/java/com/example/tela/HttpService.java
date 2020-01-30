@@ -27,7 +27,7 @@ public class HttpService extends AsyncTask<Void,Void,CEP> {
 
                 try{
 
-                    URL url = new URL("http://ws.matheuscastiglioni.com.br/ws/cep/find/" + this.cep + "/json/");
+                    URL url = new URL(" " + this.cep + "/json/");
 
                     HttpURLConnection connection = (HttpURLConnection) url.openConnection();
                     connection.setRequestMethod("GET");

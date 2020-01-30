@@ -2,6 +2,7 @@ package com.example.tela;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
@@ -11,17 +12,12 @@ import android.widget.Toast;
 
 public class tela2 extends AppCompatActivity {
 
-    public void busca(View view){
-
-        Intent intent = new Intent(this, busca.class);
-        startActivity(intent);
-    }
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tela2);
     }
+
     public void map (View view){
 
         Intent intent = new Intent(this, MapsActivity.class);

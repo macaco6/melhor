@@ -57,5 +57,17 @@ public class CEP {
     }
 
 
+    @Override
+    public String toString(){
+
+        return"CEP: " + getCep()
+                + "\nLogradouro:" + getLogradouro()
+                + "\nComplemento" + getComplemento()
+                + "\nBairro" + getBairro()
+                + "\nCidade" + getCidade()
+                + "\nEstado" + getEstado();
+
+    }
+
 
 }
